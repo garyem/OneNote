@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OneNote Training Landing Page</title>
+  <meta name="description" content="Learn the essentials of Microsoft OneNote with our quick introduction video and course highlights. Start organizing your notes effectively today.">
+
+  <!-- Open Graph Tags for Social Sharing -->
+  <meta property="og:title" content="OneNote Training Landing Page">
+  <meta property="og:description" content="Learn the essentials of Microsoft OneNote with our quick introduction video and course highlights.">
+  <meta property="og:image" content="https://img.youtube.com/vi/gO5Hk3hNrkU/maxresdefault.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://garyem.github.io/">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #1E9EDC;
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 10px;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      text-align: center;
+      margin-top: 20px;
+      opacity: 0;
+      animation: fadeIn 1s forwards;
+    }
+
+    header img {
+      max-width: 120px;
+      height: auto;
+    }
+
+    h1 {
+      font-size: 1.8em;
+      margin: 20px 0 10px 0;
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 1s 0.3s forwards;
+    }
+
+    .description {
+      max-width: 800px;
+      margin: 0 auto 20px auto;
+      text-align: center;
+      font-size: 1.1em;
+      line-height: 1.5em;
+      opacity: 0;
+      animation: fadeIn 1s 0.6s forwards;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      max-width: 1000px;
+      width: 100%;
+      opacity: 0;
+      animation: fadeIn 1s 0.9s forwards;
+    }
+
+    .video-thumbnail {
+      position: relative;
+      max-width: 500px;
+      flex: 1 1 400px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .video-thumbnail img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    .video-thumbnail:hover {
+      transform: scale(1.05);
+    }
+
+    .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 30px;
+      transition: background 0.3s ease;
+    }
+
+    .video-thumbnail:hover .play-button {
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    .cta-container {
+      flex: 1 1 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .cta-button {
+      background-color: #ffffff;
+      color: #000000;
+      padding: 20px 30px;
+      text-align: center;
+      font-size: 1.1em;
+      border: 2px solid #000;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .highlights, .feedback-section {
+      max-width: 800px;
+      background: #fff;
+      color: #000;
+      margin: 30px auto 20px auto;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      opacity: 0;
+      animation: fadeIn 1s 1.2s forwards;
+    }
+
+    .highlights h2, .feedback-section h2 {
+      text-align: center;
+      font-size: 1.4em;
+      margin-bottom: 15px;
+    }
+
+    .highlights ul {
+      list-style: disc;
+      padding-left: 20px;
+      font-size: 1em;
+      line-height: 1.5em;
+    }
+
+    .feedback-section p {
+      text-align: center;
+      margin-bottom: 0;
+      font-size: 1.1em;
+    }
+
+    .feedback-btn-container {
+      text-align: center;
+      margin: 30px 0 30px 0; /* Gap above and below */
+    }
+
+    .feedback-btn-container .cta-button {
+      padding: 12px 20px; /* Smaller button */
+      font-size: 1em;
+    }
+
+    footer {
+      margin: 30px 0 10px 0;
+      font-size: 0.9em;
+      color: #000;
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 1s 1.5s forwards;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+      }
+      .cta-container {
+        margin-top: 20px;
+      }
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="New_Gtech_Logo_2025-Transp.png" alt="Logo">
+  </header>
+
+  <main>
+    <h1>Introduction to using OneNote</h1>
+    <p class="description">
+      Learn the essentials of Microsoft OneNote with this quick introduction video.  
+      Click the button to explore the full OneNote Quick Course and start organizing your notes effectively.
+    </p>
+    <div class="content">
+      <!-- Video Thumbnail -->
+      <div class="video-thumbnail" id="video-thumbnail">
+        <img src="https://img.youtube.com/vi/gO5Hk3hNrkU/maxresdefault.jpg" alt="Introduction to OneNote Video Thumbnail">
+        <div class="play-button" aria-label="Play Video">&#9658;</div>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="cta-container">
+        <a class="cta-button" href="https://garyem.github.io/OneNote-Complete-Course-v4/" target="_blank">
+          Go to Full Course
+        </a>
+      </div>
+    </div>
+
+    <!-- Course Highlights -->
+    <section class="highlights">
+      <h2>Course Highlights</h2>
+      <ul>
+        <li>Step-by-step introduction to Microsoft OneNote's key features.</li>
+        <li>Practical examples for organizing notes, tasks, and projects.</li>
+        <li>Tips to integrate OneNote with Outlook and Teams for productivity.</li>
+      </ul>
+    </section>
+
+    <!-- Feedback Section -->
+    <section class="feedback-section">
+      <h2>We Value Your Feedback</h2>
+      <p>Please share your thoughts about this course by clicking the button below.</p>
+    </section>
+
+    <!-- Feedback Button -->
+    <div class="feedback-btn-container">
+      <a class="cta-button" href="https://docs.google.com/forms/d/e/1FAIpQLScAgQ4eyFtY0Gyk42D34bEJIHgxPfBaaD7tc6dkohlvhh5ddA/viewform?usp=header" target="_blank">
+        Give Feedback
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Garym - All rights reserved.
+  </footer>
+
+  <script>
+    // Replace thumbnail with YouTube video on click
+    document.getElementById('video-thumbnail').addEventListener('click', function () {
+      this.innerHTML = '<iframe width="100%" height="100%" style="border-radius:4px;" ' +
+        'src="https://www.youtube.com/embed/gO5Hk3hNrkU?autoplay=1" ' +
+        'title="Introduction to OneNote" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    });
+  </script>
+</body>
+</html>
